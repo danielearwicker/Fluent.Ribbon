@@ -454,6 +454,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </None>
+    <Page Include="Themes\Colors\ColorsDark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Dark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -475,7 +483,9 @@
     <None Include="Themes\Generic.txt" />
     <None Include="Themes\XamlCombine.exe" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Themes\Dark.txt" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Themes\Images\ApplicationMenu.png" />
     <Resource Include="Themes\Images\DialogLauncher.png" />
@@ -489,6 +499,10 @@
   <PropertyGroup>
     <PreBuildEvent>SET tmpError=0
 "$(ProjectDir)Themes\XamlCombine.exe" Generic.txt Generic.xaml
+
+SET tmpError=0
+"$(ProjectDir)Themes\XamlCombine.exe" Dark.txt Dark.xaml
+
 SET /a tmpError=%25tmpError%25 + %25ERRORLEVEL%25
 SET ERRORLEVEL=%25tmpError%25</PreBuildEvent>
   </PropertyGroup>

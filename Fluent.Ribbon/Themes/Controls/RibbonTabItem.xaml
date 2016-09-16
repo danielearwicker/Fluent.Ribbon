@@ -238,7 +238,7 @@
                         Value="Visible" />
                 <Setter Property="Foreground"
                         TargetName="contentPresenter"
-                        Value="{DynamicResource RibbonThemeColorBrush}" />
+                        Value="{DynamicResource TabItemHighlightedFontBrush}" />
             </MultiTrigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -258,7 +258,7 @@
                 </MultiTrigger.Conditions>
                 <Setter Property="Foreground"
                         TargetName="contentPresenter"
-                        Value="{DynamicResource RibbonThemeColorBrush}" />
+                        Value="{DynamicResource TabItemHighlightedFontBrush}" />
             </MultiTrigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -273,7 +273,7 @@
                 </MultiTrigger.Conditions>
                 <Setter Property="Foreground"
                         TargetName="contentPresenter"
-                        Value="{DynamicResource RibbonThemeColorBrush}" />
+                        Value="{DynamicResource TabItemHighlightedFontBrush}" />
             </MultiTrigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>

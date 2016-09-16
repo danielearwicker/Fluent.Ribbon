@@ -489,6 +489,10 @@
   <PropertyGroup>
     <PreBuildEvent>SET tmpError=0
 "$(ProjectDir)Themes\XamlCombine.exe" Generic.txt Generic.xaml
+
+SET tmpError=0
+"$(ProjectDir)Themes\XamlCombine.exe" Dark.txt Dark.xaml
+
 SET /a tmpError=%25tmpError%25 + %25ERRORLEVEL%25
 SET ERRORLEVEL=%25tmpError%25</PreBuildEvent>
   </PropertyGroup>
